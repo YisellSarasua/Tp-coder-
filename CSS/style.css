@@ -64,7 +64,17 @@ li{
     font-weight: var(--weight-links-font);
 }
 
+@keyframes colorHeader{
+    from{
+        background-color: #ecf010;
+    }
 
+
+    to{
+        background-color: rgb(176, 6, 176);
+    }
+
+}
 
 .container{
     width: 100%;
@@ -84,6 +94,11 @@ li{
     height:61px ;
     background-color: var(--color-header);
     position: fixed;
+
+    animation-name: colorHeader;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 
 .header nav ul{
